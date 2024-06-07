@@ -1,4 +1,6 @@
 # CSC-3102
+Makayla Files (mfiles1)
+
 Programming Portfolio that 
 includes data structures, four optional algorithms, and a challenge item.
 
