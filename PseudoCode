@@ -1,0 +1,30 @@
+//create the main node through api
+public class DynamicArray<???>
+//constructors
+array=???///make an initial array with elements and size
+//Make a constructor to add an element and another one to remove it
+//If statements for location/position
+//Return and override code
+}
+public class SinglyLinkedList<???>
+//(Private constructors)
+//Link the main Node
+//Use the main Node to make constructors to add and remove elements based on location
+//Using if statements to add element to specific location
+//Return and override code 
+}
+public class Stack<??>
+//(Private constructors)
+//Return and override code
+}
+public class Quence<??>
+//(Private constructors)
+//Return and override code
+}
+public class BinarySearch<?>
+//(Private constructors)
+//Return and override code
+}
+//Fast sort (code start up) (pull)
+
+//Slow sort (code start up) (pull)
