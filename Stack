@@ -1,1 +1,8 @@
-
+public class Stack<Stype>{
+//private implementation
+public Stack(){
+//implementation 
+static void Push(Stype item){
+//implementation
+static void Stype Pop(){
+//
