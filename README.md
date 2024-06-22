@@ -1,5 +1,5 @@
 # CSC-3102
-Makayla Files (mfiles1)
+Contact: Makayla Files (mfiles1)
 https://github.com/mfiles1/CSC-3102.git
 
 The Programming Portfolio must be in C# language and performative source code platform (I used VSCode and Github) and include
@@ -16,4 +16,10 @@ Double-Ended Queue, AVL Trees, Tries, Heaps (Heapsort or Priority Queue), Skip L
 #**The Challenge Item includes:**
 
 Red-Black Trees or Graph with Dijkstra’s Shortest Path Algorithm
+
+#**Implementation Details for Algorithm**
+
+#**Implementation Details for Compiling/Submission**
+
+
 
