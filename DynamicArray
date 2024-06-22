@@ -1,1 +1,13 @@
+public class DynamicArray<Atype>{
+
+private int currentSize;
+private int num_elements;
+
+static public DynamicArray(){
+num_elements=0;
+currentSize=5;
+arr=new Atype[currentSize];
+}
+static void Add(Atype item, int pos) {
+
 
