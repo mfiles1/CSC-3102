@@ -1,1 +1,9 @@
+public class SinglyLinkedList<Ltype>{
 
+private Node head;
+private num_items;
+
+public SinglyLinkedList() {
+num_items=0;
+}
+static void AddAt(Ltype item, int pos){
