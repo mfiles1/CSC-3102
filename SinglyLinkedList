@@ -1,3 +1,4 @@
+//supporting any data type and creating a Node class
 public class SinglyLinkedList<Ltype>{
 
     public Node head;
