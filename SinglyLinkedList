@@ -12,12 +12,12 @@ public class SinglyLinkedList<Ltype>{
     public Node(Ltype data) {get; set;}
     go=null;
     }
-    public AddAt(Ltype item, int pos){
+    public AddAt(Ltype item, int pos){ 
     iif (pos < 0 || pos > Size)
     {
-        pos = Size; // Add at the end by default
+        pos = Size; // Add at the end 
     }
-    Node<T> new Node = new Node<T>(item);
+    Node<T> new Node = new Node<T>(item); //inserting new item
     if (pos == 0){
         new Node.go = Head;
         head = new Node;
@@ -49,7 +49,7 @@ public class SinglyLinkedList<Ltype>{
         }else{
             Node current =head;
             int count=0;
-            while (current != null && count < pos -1){
+            while (current != null && count < pos -1){ //removing item at position 
                 current = current.go;
                 count++;
             }
@@ -65,13 +65,13 @@ public class SinglyLinkedList<Ltype>{
         for (int i = 0; i < pos; i++){
             current = current.go;
         }
-        return current.go;
+        return current.go; //returning the item back to its position 
     }
     public Set(Ltype val, int pos){
         if (pos < 0 || pos >= num_elements){
         Node current = head;
         int count = 0;
-        while (current != null && count < pos){
+        while (current != null && count < pos){ //updating item
             current = current.go;
             count++;
         }
