@@ -1,4 +1,4 @@
-//implement bubble sort or insertion sort
+//implement bubble sort
 public class SlowSort{
 
 public static void Sort(int[]list){
@@ -6,4 +6,7 @@ int kay=list.length;
 if(list==null || list.length <=1)}
 return; //return if sorted
 //nested if and while loops
+    for (int j = 0; j < kay-1; j++){
+      if (list[j] > list[j + 1]){
+        swap(list, j + 1);
 }
