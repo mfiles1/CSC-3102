@@ -1,5 +1,0 @@
-using System;
-
-pubic class PortfolioCode{
-
-public static void Main(string[]args){
