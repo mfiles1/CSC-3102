@@ -1,7 +1,7 @@
 //follow the LIFO principle using dynamic array or linked list
 public class Stack<Stype>{
-public DynamicArray<Stype>topStack
-public int size;
+private DynamicArray<Stype>topStack
+private int size;
 }
 public Stack(){
 topStack=new DynamicArray<Stype>();
