@@ -8,20 +8,20 @@ topStack=new DynamicArray<Stype>();
 size= new size;
 }
 public Push(Stype item){
-topStack.Add(item);
+topStack.Add(item); //adding item
 }
 public Pop(){
 if(topStack == -1){
     print("Empty");
 }
-return topStack.Remove(topStack.size()-1);
+return topStack.Remove(topStack.size()-1); //returning removed item back
 }
 public Peak(){
 if(topStack == -1){
     print("Empty");
 }
-    return topStack.Remove(topStack.size()-1);
+    return topStack.Remove(topStack.size()-1); //retunring item back
 }
 public Size(){
-return topStack.Size();
+return topStack.Size(); //current number of items
 }
