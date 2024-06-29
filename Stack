@@ -1,8 +1,27 @@
+//follow the LIFO principle using dynamic array or linked list
 public class Stack<Stype>{
-//private implementation
+public DynamicArray<Stype>topStack
+public int size;
+}
 public Stack(){
-//implementation 
-static void Push(Stype item){
-//implementation
-static void Stype Pop(){
-//
+topStack=new DynamicArray<Stype>();
+size= new size;
+}
+public Push(Stype item){
+topStack.Add(item);
+}
+public Pop(){
+if(topStack == -1){
+    print("Empty");
+}
+return topStack.Remove(topStack.size()-1);
+}
+public Peak(){
+if(topStack == -1){
+    print("Empty");
+}
+    return topStack.Remove(topStack.size()-1);
+}
+public Size(){
+return topStack.Size();
+}
