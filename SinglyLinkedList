@@ -1,9 +1,7 @@
 //supporting any data type and creating a Node class
 public class SinglyLinkedList<Ltype>{
-
-    public Node head;
-    public int currentSize;
-    
+    private Node head;
+    private int currentSize;
     public SinglyLinkedList() {
     head=null;
     currentSize=0;
