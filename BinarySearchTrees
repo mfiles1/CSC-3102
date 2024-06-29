@@ -1,1 +1,15 @@
-
+//implementation without balancing
+public class BinarySearchTrees{
+private Node bst;
+}
+public BinaryTree(){
+bst=null;
+}
+public Add(int val){
+bst=Add(bst, val); //add items
+return val;
+}
+public Remove(int val){
+bst=Remove(bst,val);
+return val; //return removed items
+}
