@@ -1,7 +1,7 @@
 //supporting data types and resizing 
 public class DynamicArray<Atype>{ 
-public int currentSize;
-public A[] num_elements;
+private int currentSize;
+private A[] num_elements;
 public DynamicArray(){ //primitive array 
 num_elements=new A[10]; //capacity
 currentSize=0;
