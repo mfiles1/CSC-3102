@@ -1,10 +1,40 @@
+//follow the FIFO and use dynamic array or linked list
 public class Queue<Qtype>{
-//private implementation 
-
+private DynamicArray<Qtype>topStack
+private int front;
+private int back;
+private int hold;
 public Queue(){
-//implementation
-
-static void Enqueue(Qtype item){
-//implementation 
-
-static void Qtype Dequeue()
+    topStack= new DynamicArray<Qtype>();
+    front=0;
+    back=-1; 
+    hold=10; //capacity 
+}
+public class Enqueue(Qtype item){ 
+    if(back == hold-1){
+        resize(); // adding items to back
+    }
+}
+public class Dequeue(){ //removing items
+    if (IsEmpty()){ 
+       print("Empty"); //queue empty
+    }
+    Qtype removedItem = topStack.Get(front++);
+    if (front > back){ //empty loop
+        front =0; 
+        back = -1; 
+    }
+    return removedItem;
+}
+public class Peek(){
+if(IsEmpty()){
+return topStack.Get(front); //return back to front
+}
+public class Size(){
+if(IsEmpty()){
+    return 0; //queue empty 
+}
+return back-front+1; //current items in queue
+}
+}
+}
