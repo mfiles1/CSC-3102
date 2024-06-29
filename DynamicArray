@@ -1,14 +1,11 @@
 //supporting data types and resizing 
 public class DynamicArray<Atype>{ 
-
 private int currentSize;
 private A[] num_elements;
-
 public DynamicArray(){ //primitive array 
 num_elements=new A[10]; //capacity
 currentSize=0;
 }
-
 public void Add(Atype item, int pos){
 if (pos <0 || pos> currentSize)
 if(currentSize == num_elements.Length) Resize();
@@ -18,7 +15,6 @@ for(int i = currentSize; i > pos; i--){
 num_elements[pos]=item;
 currentSize++;
 }
-
 public Remove(int pos){
 if(pos <0|| pos >= currentSize)
 {
@@ -44,7 +40,34 @@ public Set(Atype val, int pos){
     }
     num_elements[pos]=val;
 }
-
+public Size(){
+    return currentSize;
+}
+}
+public Remove(int pos){
+if(pos <0|| pos >= currentSize)
+{
+    throw new IndexOutOfRangeException();
+}
+for( int i = posl i < currentSize-1; i++)
+{
+    num_elements[i]=num_elements[i+1];
+}
+num_elements[currentSize-1]=default(A);
+currentSize--;
+}
+public Get(int pos){
+    if(pos <0 || pos>= currentSize){
+    throw new IndexOutOfRangeException();
+    }
+    return num_elements[pos];
+}
+public Set(Atype val, int pos){
+    if(pos < 0 || pos >= currentSize){
+        throw new IndexOutOfRangeException();
+    }
+    num_elements[pos]=val;
+}
 public Size(){
     return currentSize;
 }
