@@ -1,1 +1,12 @@
+public class Tries{
+    private bool IsEndOfWord {get; set;}
+    private TriesNode[]Children;
+}
+public Tries(){
+    IsEndOfWord=false;
+    Child= newTriesNode();}
+topStack=new TriesNode();
+}
+public Insert(string word){ 
+}
 
