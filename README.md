@@ -1,4 +1,4 @@
-# CSC-3102
+# CSC-3102 Programming Portfolio
 Contact: Makayla Files (mfiles1)
 https://github.com/mfiles1/CSC-3102.git
 
