@@ -1,9 +1,87 @@
 public class SinglyLinkedList<Ltype>{
 
-private Node head;
-private num_items;
-
-public SinglyLinkedList() {
-num_items=0;
+    public Node head;
+    public int currentSize;
+    
+    public SinglyLinkedList() {
+    head=null;
+    currentSize=0;
+    }
+    public class Node{
+    public Ltype {get; set;}
+    public Node go {get; set;}
+    public Node(Ltype data) {get; set;}
+    go=null;
+    }
+    public AddAt(Ltype item, int pos){
+    iif (pos < 0 || pos > Size)
+    {
+        pos = Size; // Add at the end by default
+    }
+    Node<T> new Node = new Node<T>(item);
+    if (pos == 0){
+        new Node.go = Head;
+        head = new Node;
+    }else{
+        Node <Ltype> current = head;
+        int count = 0;
+        while (current != null && count < pos - 1){
+            current = current.go;
+            count++;
+        }
+        if (current == null){
+            new Node.go = null;
+            current = head;
+            while (current.go != null){
+                current = current.go;
+            }
+            current.go = new Node;
+        }else{
+            new Node.go = current.go;
+            current.go = new Node;
+        }
+    }
+    currentSize++;
 }
-static void AddAt(Ltype item, int pos){
+    public RemoveAt(int pos){
+        if (pos < 0 || pos >= num_elements)
+        if (pos == 0) {
+        head = head.go;
+        }else{
+            Node current =head;
+            int count=0;
+            while (current != null && count < pos -1){
+                current = current.go;
+                count++;
+            }
+            if(current == null || current.go==null){
+                current.go=current.go;
+            }
+        }
+        num_elements--;
+    }
+    public Get(int pos){
+        if (pos < 0 || pos >= num_elements)
+        Node current = head;
+        for (int i = 0; i < pos; i++){
+            current = current.go;
+        }
+        return current.go;
+    }
+    public Set(Ltype val, int pos){
+        if (pos < 0 || pos >= num_elements){
+        Node current = head;
+        int count = 0;
+        while (current != null && count < pos){
+            current = current.go;
+            count++;
+        }
+        if (current == null) {
+        current.go = val;
+    }
+    public Size(){
+        return num_elements;
+    }
+}
+    }
+}
